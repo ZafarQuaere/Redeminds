@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".IntroActivity">
+    <RelativeLayout
+        android:id="@+id/chapter_one_whole_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextureView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/chapter_one_videoview_textureview"
+            android:layout_centerInParent="true"/>
+
+        <VideoView
+            android:id="@+id/chapter_one_videoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/chapter_one_bg_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/chapter_one_bg"
+            android:scaleType="centerCrop"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black20" />
+
+
+        <RelativeLayout
+            android:id="@+id/chapter_one_title_relativelayout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CHAPTER 01"
+                    android:layout_marginTop="25dp"
+                    android:includeFontPadding="false"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/starife_demo_regular"
+                    android:textColor="@color/assessment_title_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A WHOLE NEW WORLD"
+                    android:includeFontPadding="false"
+                    android:textSize="75sp"
+                    android:fontFamily="@font/starife_demo_regular"
+                    android:textColor="@color/assessment_title_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The exploration begins here!"
+                    android:layout_marginTop="88dp"
+                    android:includeFontPadding="false"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/starife_demo_regular"
+                    android:textColor="@color/assessment_title_color"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/chapter_one_title_next_button"
+                android:layout_width="55dp"
+                android:layout_height="44dp"
+                android:src="@drawable/assessment_next_button"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="17dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chapter_one_scroll_relativelayout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="224dp"
+                android:layout_height="324dp"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/scroll"/>
+
+                <LinearLayout
+                    android:id="@+id/chapter_one_scroll_wizard_linearlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_centerInParent="true">
+                    <ImageView
+                        android:layout_width="117dp"
+                        android:layout_height="173dp"
+                        android:src="@drawable/wizard" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginBottom="6dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textSize="21sp"
+                        android:textColor="@color/intro_scroll_color"
+                        android:text="WIZARD"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/chapter_one_scroll_wizard_textview"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/chapter_one_scroll_text"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="16sp"
+                    android:textColor="@color/intro_scroll_color"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/chapter_one_scroll_next_button"
+                android:layout_width="55dp"
+                android:layout_height="44dp"
+                android:src="@drawable/assessment_next_button"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="17dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chapter_one_wizard_relativelayout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+            <com.redeminds.app.TopCropImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chapter_one_bg_with_wizard" />
+
+            <RelativeLayout
+                android:id="@+id/chapter_one_wizard_before_assessment_speak_1_relativelayout"
+                android:layout_width="390dp"
+                android:layout_height="167dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginStart="180dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="160dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/speak_bg"/>
+
+                <TextView
+                    android:id="@+id/chapter_one_wizard_before_assessment_speak_1"
+                    android:layout_width="351dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginStart="18dp"
+                    android:text="@string/chapter_one_wizard_before_assessment_speak_1"
+                    style="@style/speak_text"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chapter_one_wizard_before_assessment_speak_2_relativelayout"
+                android:layout_width="490dp"
+                android:layout_height="209dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginStart="180dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="149dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/speak_bg"/>
+
+                <TextView
+                    android:id="@+id/chapter_one_wizard_before_assessment_speak_2"
+                    android:layout_width="439dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="37dp"
+                    android:layout_marginStart="21dp"
+                    android:text="@string/chapter_one_wizard_before_assessment_speak_2"
+                    style="@style/speak_text"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chapter_one_wizard_before_assessment_speak_3_relativelayout"
+                android:layout_width="490dp"
+                android:layout_height="209dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginStart="180dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="149dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/speak_bg"/>
+                <TextView
+                    android:id="@+id/chapter_one_wizard_before_assessment_speak_3"
+                    android:layout_width="439dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="37dp"
+                    android:layout_marginStart="21dp"
+                    android:text="@string/chapter_one_wizard_before_assessment_speak_3"
+                    style="@style/speak_text"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chapter_one_wizard_before_assessment_speak_4_relativelayout"
+                android:layout_width="490dp"
+                android:layout_height="209dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginStart="180dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="149dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/speak_bg"/>
+                <TextView
+                    android:id="@+id/chapter_one_wizard_before_assessment_speak_4"
+                    android:layout_width="439dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="37dp"
+                    android:layout_marginStart="21dp"
+                    android:text="@string/chapter_one_wizard_before_assessment_speak_4"
+                    style="@style/speak_text"/>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/chapter_one_eternity_gemstone_imageview"
+                android:visibility="gone"
+                android:layout_width="144dp"
+                android:layout_height="138dp"
+                android:src="@drawable/eternity_gemstone"
+                android:layout_marginEnd="53dp"
+                android:layout_marginBottom="-98dp"
+                android:layout_alignEnd="@id/chapter_one_wizard_before_assessment_speak_3_relativelayout"
+                android:layout_alignBottom="@id/chapter_one_wizard_before_assessment_speak_3_relativelayout"/>
+
+            <ImageView
+                android:id="@+id/chapter_one_wizard_next_button"
+                android:layout_width="55dp"
+                android:layout_height="44dp"
+                android:src="@drawable/assessment_next_button"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="17dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chapter_one_assessment_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chapter_one_recyclerview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <com.redeminds.app.Scroll
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="black">#FF000000</color>
+    <color name="black20">#33000000</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="white40">#66FFFFFF</color>
+    <color name="white60">#99FFFFFF</color>
+    <color name="white70">#B2FFFFFF</color>
+
+    <color name="get_started_redeminds_name_text_color">#CBBAF4</color>
+    <color name="login_redeminds_name_text_color">#E2DDEE</color>
+    <color name="login_number_edittext_fill">#808B79C0</color>
+    <color name="login_number_edittext_border">#120C38</color>
+
+    <color name="fb_color">#4267B2</color>
+    <color name="truecaller_color">#2589FF</color>
+    <color name="google_color_blue">#4285F4</color>
+    <color name="google_color_red">#EA4335</color>
+    <color name="google_color_yellow">#FBBC05</color>
+    <color name="google_color_green">#34A853</color>
+
+    <color name="verify_edit_text_color">#0A84FF</color>
+    <color name="verify_resend_otp_text_color">#26A5FF</color>
+    <color name="dashboard_bg_color">#0C022C</color>
+
+    <color name="assessment_title_color">#E6BE7C</color>
+    <color name="intro_scroll_color">#412D1B</color>
+</resources>

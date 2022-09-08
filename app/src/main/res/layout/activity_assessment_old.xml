@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AssessmentOldActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextureView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/assessment_videoview_textureview"
+            android:layout_centerInParent="true"/>
+
+        <VideoView
+            android:id="@+id/assessment_videoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/intro1_relativelayout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="40dp"
+                    android:src="@drawable/scroll"/>
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/wizard"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="LorepIspum"/>
+
+
+                </LinearLayout>
+                
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/assessment_button"
+                android:layout_width="56dp"
+                android:layout_height="40dp"
+                android:src="@drawable/blue_button"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="40dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/questions_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="32dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question_textview"
+                android:layout_width="400dp"
+                android:layout_height="64dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:padding="12dp"
+                android:gravity="center"
+                android:background="@drawable/text_bg"
+                android:text="I see myself as someone who"
+                android:textSize="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/questions_options_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_below="@id/question_textview"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:gravity="center"
+                        android:background="@drawable/text_bg"
+                        android:text="I see myself as someone who"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/text_bg"
+                        android:text="I see myself as someone who"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/text_bg"
+                        android:text="I see myself as someone who"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/text_bg"
+                        android:text="I see myself as someone who"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/text_bg"
+                        android:text="I see myself as someone who"
+                        android:textSize="14dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@drawable/text_bg"
+                            android:text="Stringly disagree"
+                            android:textSize="14dp"/>
+
+                        <LinearLayout
+                            android:id="@+id/question_1_option_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_1_option_1_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/question_2_option_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_2_option_1_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/question_3_option_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_3_option_1_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/question_4_option_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_4_option_1_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@drawable/text_bg"
+                            android:text="Disagree"
+                            android:textSize="14dp"/>
+
+                        <LinearLayout
+                            android:id="@+id/question_1_option_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_1_option_2_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/question_2_option_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_2_option_2_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/question_3_option_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_3_option_2_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/question_4_option_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_4_option_2_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@drawable/text_bg"
+                            android:text="Not sure/Neutral"
+                            android:textSize="12dp"/>
+
+                        <LinearLayout
+                            android:id="@+id/question_1_option_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_1_option_3_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/question_2_option_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_2_option_3_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/question_3_option_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_3_option_3_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/question_4_option_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_4_option_3_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@drawable/text_bg"
+                            android:text="Agree"
+                            android:textSize="14dp"/>
+
+                        <LinearLayout
+                            android:id="@+id/question_1_option_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_1_option_4_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/question_2_option_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_2_option_4_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/question_3_option_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_3_option_4_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/question_4_option_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_4_option_4_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@drawable/text_bg"
+                            android:text="Stringly Agree"
+                            android:textSize="14dp"/>
+
+                        <LinearLayout
+                            android:id="@+id/question_1_option_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_1_option_5_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/question_2_option_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_2_option_5_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/question_3_option_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_3_option_5_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/question_4_option_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/question_4_option_5_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/radio_unclicked"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/assessment_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/questions_options_layout"
+                android:src="@drawable/submit_button"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

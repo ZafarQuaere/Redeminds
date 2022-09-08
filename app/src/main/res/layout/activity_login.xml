@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/redeminds_login_bg"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/login_redeminds_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/bebasneue_regular"
+            android:text="redeminds"
+            android:textColor="@color/login_redeminds_name_text_color"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/login_login_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/login_redeminds_name_textview"
+            android:layout_marginTop="84dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="LogIn"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:id="@+id/login_number_edittext_layout"
+            android:layout_width="271dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/login_login_title_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="89dp"
+            android:background="@drawable/border_1dp_120c38_fill_808b79c0_radius_5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="+91  "
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/login_phone_number_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="9898908098"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white40"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/login_get_otp_button_layout"
+            android:layout_width="211dp"
+            android:layout_height="51dp"
+            android:layout_below="@id/login_number_edittext_layout"
+            android:layout_marginTop="29dp"
+            android:layout_centerHorizontal="true">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/border_1dp_ffffff"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:text="Get OTP"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/login_bottom_text_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/inter_regular"
+            android:includeFontPadding="false"
+            android:text="@string/accept_terms_of_service_and_privacy_policy"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</layout>

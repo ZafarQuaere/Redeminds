@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".JourneyActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/redeminds_login_bg" />
+
+        <TextView
+            android:id="@+id/journey_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:includeFontPadding="false"
+            android:text="Your Journey Ahead"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:layout_below="@id/journey_title_textview"
+            android:layout_above="@id/journey_lets_start_button_layout"
+            android:id="@+id/journey_layout">
+
+            <ImageView
+                android:id="@+id/journey_path_imageview"
+                android:layout_width="270dp"
+                android:layout_height="586dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="41dp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginBottom="44dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/journey_path" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/journey_checkpoint_6_imageview"
+                    android:layout_width="80dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="243dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/checkpoint_sixth_unhighlighted" />
+
+
+                <ImageView
+                    android:id="@+id/journey_checkpoint_5_imageview"
+                    android:layout_width="80dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/checkpoint_fifth_unhighlighted" />
+
+
+                <ImageView
+                    android:id="@+id/journey_checkpoint_4_imageview"
+                    android:layout_width="80dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:src="@drawable/checkpoint_fourth_unhighlighted" />
+
+
+                <ImageView
+                    android:id="@+id/journey_checkpoint_3_imageview"
+                    android:layout_width="80dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/checkpoint_third_unhighlighted" />
+
+
+                <ImageView
+                    android:id="@+id/journey_checkpoint_2_imageview"
+                    android:layout_width="80dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:src="@drawable/checkpoint_third_unhighlighted" />
+
+
+                <ImageView
+                    android:id="@+id/journey_checkpoint_1_imageview"
+                    android:layout_width="80dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/checkpoint_first_highlighted" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/journey_lets_start_button_layout"
+            android:layout_width="211dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/border_1dp_ffffff"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:text="Let’s Get Started"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

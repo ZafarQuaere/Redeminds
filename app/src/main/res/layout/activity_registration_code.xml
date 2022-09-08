@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegistrationCodeActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/redeminds_login_bg" />
+
+        <TextView
+            android:id="@+id/registration_code_hi_there_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/bebasneue_regular"
+            android:text="Hi there 👋"
+            android:textColor="@color/login_redeminds_name_text_color"
+            android:textSize="48sp" />
+
+
+        <TextView
+            android:id="@+id/registration_code_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registration_code_hi_there_title_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="84dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Registration Code"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/registration_code_code_edittext_layout"
+            android:layout_width="271dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/registration_code_title_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="84dp"
+            android:background="@drawable/border_1dp_120c38_fill_808b79c0_radius_5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/registration_code_code_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="#432-466-3451"
+                android:inputType="number"
+                android:maxLength="9"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white40"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/registration_code_verify_code_button_layout"
+            android:layout_width="211dp"
+            android:layout_height="51dp"
+            android:layout_below="@id/registration_code_code_edittext_layout"
+            android:layout_marginTop="34dp"
+            android:layout_centerHorizontal="true">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/border_1dp_ffffff"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:text="Verify Code"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

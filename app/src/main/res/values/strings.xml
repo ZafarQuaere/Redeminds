@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Redeminds</string>
+    <string name="conditions_of_use"><u>conditions of use</u></string>
+    <string name="privacy_policy"><u>privacy policy</u></string>
+    <string name="accept_terms_of_service_and_privacy_policy"><u>By continuing you accept the Terms of service \nand Privacy Policy</u></string>
+    <string name="lorem_ipsum">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on.</string>
+
+    <string name="intro_scroll_text">The magical world is in danger, and only you, the Chosen One, can save it!\n\n\nThe wizards have lost something irreplaceable, and you must go on a journey to get it back.\n\n\nOn this journey, you will have to make choices to help you discover your strengths, unlock hidden powers, and achieve your goals.\n\n\nDive in—a world of adventure awaits!</string>
+
+    <string name="chapter_one_scroll_text">Chief of Wizards,\none who can tell\nthe future, and his\npower is held in the Eternity\nGemstone. He\ntrusts you with the\nquest to retrieve\nthe gemstone\nfrom the wrong\nhands.</string>
+    <string name="chapter_one_wizard_before_assessment_speak_1">“Welcome. You have been invited for a quest.\nThere are people who need your help.\nA heroic adventure awaits.”</string>
+    <string name="chapter_one_wizard_before_assessment_speak_2">“I am the chief of the clan of wizards. We are a very\nancient and magical people, but something vital has\nbeen stolen from us. Without it, we have no magic. Only\nyou can help us. You are our Chosen One, our last hope.”</string>
+    <string name="chapter_one_wizard_before_assessment_speak_3">“The Eternity Gemstone holds all our magic. An evil\nman, Lord Acheron, has stolen it so that he can capture\nland and oppress the people. We must get it out of Lord\nAcheron’s hands, to bring peace to the land.”</string>
+    <string name="chapter_one_wizard_before_assessment_speak_4">"The Chosen One must know themselves better than\nanyone, and must always be honest. Choose the\nstatements that are true, so that we know we can trust\nyou."</string>
+
+</resources>

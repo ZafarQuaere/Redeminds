@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".IntroActivity">
+    <RelativeLayout
+        android:id="@+id/intro_whole_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextureView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/intro_videoview_textureview"
+            android:layout_centerInParent="true"/>
+
+        <VideoView
+            android:id="@+id/intro_videoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <ImageView
+            android:id="@+id/intro_bg_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/intro_bg"
+            android:scaleType="centerCrop"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black20"/>
+
+
+        <RelativeLayout
+            android:id="@+id/intro_title_relativelayout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Chosen One:\n\n"
+                    android:includeFontPadding="false"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/starife_demo_regular"
+                    android:textColor="@color/assessment_title_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Quest for the\nEternity Gemstone"
+                    android:includeFontPadding="false"
+                    android:textSize="75sp"
+                    android:fontFamily="@font/starife_demo_regular"
+                    android:textColor="@color/assessment_title_color"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/intro_title_next_button"
+                android:layout_width="55dp"
+                android:layout_height="44dp"
+                android:src="@drawable/assessment_next_button"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="17dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/intro_scroll_relativelayout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="224dp"
+                android:layout_height="324dp"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/scroll"/>
+
+                <ScrollView
+                    android:layout_width="173dp"
+                    android:layout_height="198dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_centerVertical="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textSize="15dp"
+                        android:textColor="@color/intro_scroll_color"
+                        android:text="@string/intro_scroll_text"/>
+                </ScrollView>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/intro_scroll_next_button"
+                android:layout_width="55dp"
+                android:layout_height="44dp"
+                android:src="@drawable/assessment_next_button"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="17dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

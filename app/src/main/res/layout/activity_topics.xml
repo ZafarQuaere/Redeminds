@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TopicsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/redeminds_login_bg" />
+
+        <TextView
+            android:id="@+id/topics_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="74sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:includeFontPadding="false"
+            android:text="Let us know you better 🤓"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/topics_subtitle_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick 3 (or more!) topics of your choice"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="13sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/topics_title_textview"
+            android:includeFontPadding="false"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/topics_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/topics_continue_button_layout"
+            android:layout_below="@id/topics_subtitle_textview"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="30dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/topics_continue_button_layout"
+            android:layout_alignParentBottom="true"
+            android:layout_width="257dp"
+            android:layout_height="61dp"
+            android:layout_marginBottom="43dp"
+            android:layout_centerHorizontal="true">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/border_1dp_ffffff"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:text="Continue"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

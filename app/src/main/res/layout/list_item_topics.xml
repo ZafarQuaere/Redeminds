@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="94dp"
+    android:layout_height="162dp"
+    android:orientation="vertical"
+    android:background="@drawable/border_1dp_120c38_fill_b2ffffff_radius_5dp">
+    
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/empty_circle_120c38"
+        android:layout_gravity="end"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="6dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginHorizontal="10dp"
+        android:src="@drawable/border_1dp_120c38_fill_b2ffffff_radius_5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="8dp"
+        android:text="Performing\nArts"
+        android:textAlignment="viewEnd"/>
+
+</LinearLayout>
