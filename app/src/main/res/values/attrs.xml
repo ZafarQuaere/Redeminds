@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="Scroll"/>
+    <declare-styleable name="Speak">
+        <attr name="speak_text" format="string"/>
+        <attr name="speak_text_margin_top" format="dimension"/>
+        <attr name="speak_text_margin_start" format="dimension"/>
+        <attr name="flip" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ChapterTitle">
+        <attr name="chapter_number" format="string"/>
+        <attr name="chapter_name" format="string"/>
+        <attr name="chapter_tagline" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="Scroll">
+        <attr name="scroll_title" format="string"/>
+        <attr name="scroll_content" format="string"/>
+        <attr name="scroll_title_margin_top" format="dimension"/>
+        <attr name="scroll_content_margin_top" format="dimension"/>
+    </declare-styleable>
 </resources>

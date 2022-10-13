@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ChapterTwoActivity">
+    <RelativeLayout
+        android:id="@+id/chapter_two_whole_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--        <TextureView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/chapter_two_videoview_textureview"
+            android:layout_centerInParent="true"/>
+
+        <VideoView
+            android:id="@+id/chapter_two_videoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>-->
+
+        <ImageView
+            android:id="@+id/chapter_two_bg_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/chapter_two_bg"
+            android:scaleType="centerCrop"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black20" />
+
+        <RelativeLayout
+            android:id="@+id/chapter_two_title_relativelayout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+            <com.redeminds.app.uicomponents.ChapterTitle
+                xmlns:chapterTitleNS="http://schemas.android.com/apk/res/com.redeminds.app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                chapterTitleNS:chapter_number="CHAPTER 02"
+                chapterTitleNS:chapter_name="A Magical Helper"
+                chapterTitleNS:chapter_tagline="Unlock your hidden powers!"/>
+
+            <ImageView
+                android:id="@+id/chapter_two_title_next_button"
+                android:layout_width="55dp"
+                android:layout_height="44dp"
+                android:src="@drawable/assessment_next_button"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="17dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chapter_two_scroll_relativelayout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="224dp"
+                android:layout_height="324dp"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/scroll"/>
+
+                <LinearLayout
+                    android:id="@+id/chapter_two_scroll_wizard_linearlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_centerInParent="true">
+                    <ImageView
+                        android:layout_width="129dp"
+                        android:layout_height="155dp"
+                        android:src="@drawable/olwin"
+                        android:layout_marginTop="19dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textSize="21sp"
+                        android:textColor="@color/intro_scroll_color"
+                        android:text="OLWIN"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/chapter_two_scroll_wizard_textview"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/chapter_two_scroll_text"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="16sp"
+                    android:textColor="@color/intro_scroll_color"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/chapter_two_scroll_next_button"
+                android:layout_width="55dp"
+                android:layout_height="44dp"
+                android:src="@drawable/assessment_next_button"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="17dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chapter_two_wizard_before_assessment_1_relativelayout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+            <com.redeminds.app.uicomponents.Speak
+                xmlns:speakNS="http://schemas.android.com/apk/res/com.redeminds.app"
+                android:layout_width="490dp"
+                android:layout_height="209dp"
+                android:layout_marginStart="197dp"
+                android:layout_marginTop="32dp"
+                speakNS:speak_text="@string/chapter_two_wizard_before_assessment_1_speak"
+                speakNS:speak_text_margin_start="21dp"
+                speakNS:speak_text_margin_top="37dp"
+                speakNS:flip="false"/>
+
+
+            <ImageView
+                android:id="@+id/chapter_two_wizard_before_assessment_1_next_button"
+                android:layout_width="55dp"
+                android:layout_height="44dp"
+                android:src="@drawable/assessment_next_button"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="17dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chapter_two_assessment_1_relativelayout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/speak_text"
+                android:text="Assessment"
+                android:background="@color/white"
+                android:layout_centerInParent="true"/>
+
+
+            <ImageView
+                android:id="@+id/chapter_two_assessment_1_next_button"
+                android:layout_width="55dp"
+                android:layout_height="44dp"
+                android:src="@drawable/assessment_next_button"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="17dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/chapter_two_wizard_after_assessment_1_relativelayout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+
+            <com.redeminds.app.uicomponents.Speak
+                xmlns:speakNS="http://schemas.android.com/apk/res/com.redeminds.app"
+                android:layout_width="541dp"
+                android:layout_height="231dp"
+                android:layout_marginStart="197dp"
+                android:layout_marginTop="30dp"
+                speakNS:speak_text="@string/chapter_two_wizard_after_assessment_1_speak"
+                speakNS:speak_text_margin_start="31dp"
+                speakNS:speak_text_margin_top="21dp"
+                speakNS:flip="false"/>
+
+            <ImageView
+                android:id="@+id/chapter_two_wizard_after_assessment_1_next_button"
+                android:layout_width="55dp"
+                android:layout_height="44dp"
+                android:src="@drawable/assessment_next_button"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="17dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

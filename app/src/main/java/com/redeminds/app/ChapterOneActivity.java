@@ -9,31 +9,23 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.animation.LayoutTransition;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.graphics.Point;
 import android.graphics.SurfaceTexture;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.provider.MediaStore;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 import android.widget.VideoView;
 
 import com.redeminds.app.databinding.ActivityChapterOneBinding;
@@ -210,13 +202,11 @@ public class ChapterOneActivity extends AppCompatActivity {
                         break;
 
                     case 3:
-                        mBinding.chapterOneWizardBeforeAssessmentSpeak3Relativelayout.setVisibility(View.GONE);
-                        mBinding.chapterOneEternityGemstoneImageview.setVisibility(View.GONE);
-                        mBinding.chapterOneWizardBeforeAssessmentSpeak4Relativelayout.setVisibility(View.VISIBLE);
+                        startActivity(new Intent(ChapterOneActivity.this, ChapterTwoActivity.class));
                         break;
 
                     case 4:
-                        showAssessment();
+                        startActivity(new Intent(ChapterOneActivity.this, ChapterTwoActivity.class));
                         break;
                 }
                 mBeforeAssessmentSpeakIndex++;
@@ -255,7 +245,7 @@ public class ChapterOneActivity extends AppCompatActivity {
         @Override
         public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             View view = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.list_item_options, parent, false);
+                    .inflate(R.layout.custom_speak, parent, false);
 
             MyViewHolder myViewHolder = new MyViewHolder(view);
 

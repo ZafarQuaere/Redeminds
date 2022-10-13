@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ChapterFourActivity">
+    <RelativeLayout
+        android:id="@+id/chapter_four_whole_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextureView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/chapter_four_videoview_textureview"
+            android:layout_centerInParent="true"/>
+
+        <VideoView
+            android:id="@+id/chapter_four_videoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black20" />
+
+        <RelativeLayout
+            android:id="@+id/chapter_four_title_relativelayout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+            <com.redeminds.app.uicomponents.ChapterTitle
+                xmlns:chapterTitleNS="http://schemas.android.com/apk/res/com.redeminds.app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                chapterTitleNS:chapter_number="CHAPTER 04"
+                chapterTitleNS:chapter_name="A DIFFICULT CHOICE"
+                chapterTitleNS:chapter_tagline="Ride through the unknown path!"/>
+
+            <ImageView
+                android:id="@+id/chapter_four_title_next_button"
+                android:layout_width="55dp"
+                android:layout_height="44dp"
+                android:src="@drawable/assessment_next_button"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="17dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chapter_four_olwin_speak_1_before_assessment_1_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="198dp"
+                android:layout_height="155dp"
+                android:src="@drawable/olwin_side"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="170dp"/>
+
+            <com.redeminds.app.uicomponents.Speak
+                xmlns:speakNS="http://schemas.android.com/apk/res/com.redeminds.app"
+                android:layout_width="474dp"
+                android:layout_height="202dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginStart="152dp"
+                speakNS:speak_text="@string/chapter_four_olwin_speak_1_before_assessment_1"
+                speakNS:speak_text_margin_top="57dp"
+                speakNS:speak_text_margin_start="33dp"
+                speakNS:flip="false"/>
+
+            <ImageView
+                android:id="@+id/chapter_four_olwin_speak_1_before_assessment_1_next_button"
+                android:layout_width="55dp"
+                android:layout_height="44dp"
+                android:src="@drawable/assessment_next_button"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="17dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chapter_four_lady_speak_before_assessment_1_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <com.redeminds.app.uicomponents.Speak
+                xmlns:speakNS="http://schemas.android.com/apk/res/com.redeminds.app"
+                android:layout_width="337dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="133dp"
+                android:layout_marginEnd="73dp"
+                android:layout_alignParentEnd="true"
+                speakNS:speak_text="@string/chapter_four_lord_acheron_speak_before_assessment_1"
+                speakNS:speak_text_margin_top="43dp"
+                speakNS:speak_text_margin_start="37dp"
+                speakNS:flip="true"/>
+
+            <ImageView
+                android:id="@+id/chapter_four_lady_speak_before_assessment_1_next_button"
+                android:layout_width="55dp"
+                android:layout_height="44dp"
+                android:src="@drawable/assessment_next_button"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="17dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

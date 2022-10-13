@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="scrollData"
+            type="com.redeminds.app.uicomponents.Scroll.ScrollObject" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/scroll">
+
+        <TextView
+            android:id="@+id/custom_scroll_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{scrollData.title}"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            style="@style/scroll_title"/>
+
+        <TextView
+            android:id="@+id/custom_scroll_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:lineSpacingMultiplier="1.7711"
+            android:text="@{scrollData.content}"
+            style="@style/scroll_content"/>
+
+    </LinearLayout>
+</layout>
