@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/assessment_title_top_margin"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rlytAsstTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/assessment_title_bg"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/assessment_title_horizontal_padding"
+                android:paddingVertical="5dp"
+                android:text="@string/i_see_myself_as_someone_who"
+                android:textColor="@color/assessment_title_color"
+                android:textSize="@dimen/asst_title_text_size" />
+
+            <TextView
+                android:id="@+id/helpIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/btn_olwin_help" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlytAsstTitle"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/titles"
+                layout="@layout/assessment_option_titles" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAsst21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/assessment_list_bg"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/submit_btn_bg"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/teal_700" />
+
+            <TextView
+                android:id="@+id/txtNext"
+                android:layout_width="@dimen/btn_next_width"
+                android:layout_height="@dimen/btn_next_height"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/assessment_next_button" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

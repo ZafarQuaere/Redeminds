@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.view.WindowCompat;
 import androidx.databinding.DataBindingUtil;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.animation.LayoutTransition;
 import android.app.Dialog;
@@ -18,10 +20,18 @@ import android.util.Log;
 import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.VideoView;
 
+import com.redeminds.app.assessment.AssessmentType2Adapter;
 import com.redeminds.app.databinding.ActivityChapterThreeBinding;
+import com.redeminds.app.utils.Assessment31;
+import com.redeminds.app.utils.AssessmentUtil;
+import com.redeminds.app.utils.Utils;
+
+import java.util.List;
 
 public class ChapterThreeActivity extends AppCompatActivity {
 
@@ -30,6 +40,9 @@ public class ChapterThreeActivity extends AppCompatActivity {
     private SurfaceTexture mSurface;
     private MediaPlayer mPlayer;
     private Dialog progressDialog;
+    private TextView btnSubmit;
+    private TextView helpIcon,txtNext;
+    private RecyclerView rvAsst31;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,15 +60,7 @@ public class ChapterThreeActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         mTextureView = mBinding.chapterThreeVideoviewTextureview;
-
-        /*progressDialog = new Dialog(ChapterThreeActivity.this, android.R.style.Theme_Black);
-        View view = LayoutInflater.from(ChapterThreeActivity.this).inflate(R.layout.progress_bar_tranparent, (ViewGroup) findViewById(R.id.progress_bar_layout));
-        progressDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        progressDialog.getWindow().setBackgroundDrawableResource(R.color.transparent);
-        progressDialog.setContentView(view);
-        progressDialog.setCancelable(false);
-        progressDialog.setCanceledOnTouchOutside(false);
-        progressDialog.show();*/
+        initUI();
 
         mTextureView.setSurfaceTextureListener(new TextureView.SurfaceTextureListener() {
             @Override
@@ -103,6 +108,13 @@ public class ChapterThreeActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void initUI() {
+        btnSubmit = findViewById(R.id.btnSubmit);
+        helpIcon = findViewById(R.id.helpIcon);
+        txtNext = findViewById(R.id.txtNext);
+        rvAsst31 = findViewById(R.id.rvAsst31);
     }
 
 
@@ -183,12 +195,19 @@ public class ChapterThreeActivity extends AppCompatActivity {
     private void showAssessment1() {
         mBinding.chapterThreeOlwinSpeakBeforeAssessment1Relativelayout.setVisibility(View.GONE);
         mBinding.chapterThreeAssessment1Relativelayout.setVisibility(View.VISIBLE);
-        mBinding.chapterThreeAssessment1NextButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showScroll2();
-            }
+
+        List<Assessment31> list = AssessmentUtil.INSTANCE.getAssessment31Data();
+        AssessmentType2Adapter adapter = new AssessmentType2Adapter(this,list);
+        rvAsst31.setAdapter(adapter);
+        rvAsst31.setLayoutManager(new LinearLayoutManager(this));
+        txtNext.setOnClickListener(v -> {
+            showScroll2();
         });
+        btnSubmit.setOnClickListener(view -> {
+            Utils.ERROR(adapter.getSelectedItem().getQuestion()+"  "+adapter.getSelectedItem().getValue());
+            Utils.showToast(this,adapter.getSelectedItem().getQuestion());
+        });
+
     }
 
     private void showScroll2(){

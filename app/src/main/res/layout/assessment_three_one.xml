@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/assessment_title_top_margin"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rlytAsstTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/assessment_title_bg"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/assessment_title_horizontal_padding"
+                android:paddingVertical="5dp"
+                android:text="@string/how_do_we_find_river"
+                android:textColor="@color/assessment_title_color"
+                android:textSize="@dimen/asst_title_text_size" />
+
+            <TextView
+                android:id="@+id/helpIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/btn_olwin_help" />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAsst31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlytAsstTitle"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/assessment_list_bg"
+            android:scrollbars="horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/submit_btn_bg"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@color/teal_700" />
+
+        <TextView
+            android:id="@+id/txtNext"
+            android:layout_width="@dimen/btn_next_width"
+            android:layout_height="@dimen/btn_next_height"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/assessment_next_button" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

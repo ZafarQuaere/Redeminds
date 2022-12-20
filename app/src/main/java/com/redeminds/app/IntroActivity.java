@@ -169,6 +169,7 @@ public class IntroActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         startActivity(new Intent(IntroActivity.this, ChapterOneActivity.class));
                         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+                        finish();
                     }
                 });
             }

@@ -35,7 +35,7 @@
         <RelativeLayout
             android:id="@+id/chapter_two_title_relativelayout"
             android:layout_width="match_parent"
-            android:visibility="gone"
+            android:visibility="visible"
             android:layout_height="match_parent">
 
             <com.redeminds.app.uicomponents.ChapterTitle
@@ -164,11 +164,14 @@
             android:visibility="gone"
             android:layout_height="match_parent">
 
-            <TextView
+            <include
+                layout="@layout/assessment1_ch2"/>
+
+          <!--  <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/speak_text"
-                android:text="Assessment"
+                android:text="Assessment2314654"
                 android:background="@color/white"
                 android:layout_centerInParent="true"/>
 
@@ -182,7 +185,7 @@
                 android:layout_marginBottom="17dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"/>
-
+-->
         </RelativeLayout>
 
 

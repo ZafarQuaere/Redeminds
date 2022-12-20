@@ -27,4 +27,37 @@
 
     <string name="chapter_four_olwin_speak_1_before_assessment_1">Well done! That’s a great disguise. But I heard from\nbirds that Lord Acheron is leaving. Let\'s follow him!</string>
     <string name="chapter_four_lord_acheron_speak_before_assessment_1">“Can you help me cross this river?”</string>
+
+    <string name="how_do_we_find_river">How do we find the river?</string>
+    <string name="submit">Submit</string>
+    <string name="i_see_myself_as_someone_who">I see myself as someone who..</string>
+
+    <string name="strongly_disagree">Strongly Disagree</string>
+    <string name="disagree">Disagree</string>
+    <string name="neutral">Neutral/Not Sure</string>
+    <string name="agree">Agree</string>
+    <string name="strongly_agree">Strongly Agree</string>
+    
+    
+    <string-array name="assessment_chapter2_one">
+        <item>I enjoy learning about other cultures</item>
+        <item>I like to innovate with ideas or aesthetics</item>
+        <item>I cooperate well with others and can mediate disputes.</item>
+        <item>I like working with tools and machines</item>
+        <item>I like maintaining routines and structuring plans</item>
+        <item>I can give speeches and lead a group</item>
+        <item>I like to keep records and note down details</item>
+        <item>I like to figure things out and can understand science-use information for it</item>
+        <item>I can fix electronic and mechanical tools</item>
+        <item>I like to do volunteer service</item>
+        <item>I can make original crafts, dinners and school projects.</item>
+        <item>I can think creatively using my words, music or arts</item>
+        <item>I am practical and like working by myself</item>
+        <item>I can persuade people to take certain decisions</item>
+        <item>I can persuade people to take certain decisions</item>
+        <item>I am self-confident and assertive</item>
+        <item>I can do complex calculations and perform experiments</item>
+        <item>I like analyzing and understanding solutions to problems</item>
+        <item>I can plan and supervise activities and events</item>
+    </string-array>
 </resources>

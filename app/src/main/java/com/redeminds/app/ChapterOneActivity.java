@@ -303,20 +303,7 @@ public class ChapterOneActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(ChapterOneActivity.this);
-        dialogBuilder.setMessage("Switch To Dashboard?");
-        dialogBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                startActivity(new Intent(ChapterOneActivity.this, DashboardActivity.class));
-            }
-        });
-        dialogBuilder.setNegativeButton("No", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-
-            }
-        });
-        dialogBuilder.show();
+        super.onBackPressed();
+//        Utils.showBackPressDialog(this);
     }
 }

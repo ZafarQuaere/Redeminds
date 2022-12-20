@@ -13,11 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Redeminds"
         tools:targetApi="31">
+      <!--  <activity
+            android:name=".AssessmentActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>-->
         <activity
             android:name=".ChapterFourActivity"
             android:exported="false"
             android:screenOrientation="landscape"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.NoAnimation"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.NoAnimation" />
         <activity
             android:name=".ChapterThreeActivity"
             android:exported="false"
@@ -28,16 +35,18 @@
             android:exported="false"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.NoAnimation" />
-        <activity
+      <!--  <activity
             android:name=".ChapterOneActivity"
             android:exported="false"
             android:screenOrientation="landscape"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.NoAnimation" />
-        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.NoAnimation" />-->
+        <!--
+  <activity
             android:name=".IntroActivity"
             android:exported="false"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        -->
         <activity
             android:name=".AssessmentOldActivity"
             android:exported="false"
@@ -66,10 +75,12 @@
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="false" />
+            android:exported="false" /> <!-- android:name=".GetStartedActivity" -->
         <activity
-            android:name=".GetStartedActivity"
-            android:exported="true">
+            android:name=".ChapterOneActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

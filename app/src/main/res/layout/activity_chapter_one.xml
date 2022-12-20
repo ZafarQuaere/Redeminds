@@ -35,7 +35,7 @@
         <RelativeLayout
             android:id="@+id/chapter_one_title_relativelayout"
             android:layout_width="match_parent"
-            android:visibility="gone"
+            android:visibility="visible"
             android:layout_height="match_parent">
 
             <LinearLayout
@@ -273,7 +273,7 @@
             android:id="@+id/chapter_one_assessment_relativelayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:visibility="gone">
+            android:visibility="visible">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/chapter_one_recyclerview"
